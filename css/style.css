@@ -1,0 +1,40 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  line-height: 1.7;
+  color: #fff;
+  padding: 2rem;
+  box-sizing: border-box; }
+
+.heading-primary--main {
+  text-align: center;
+  display: block;
+  color: #fff;
+  font-size: 6rem;
+  letter-spacing: 2.5rem; }
+
+.heading-primary--sub {
+  color: #fff;
+  font-size: 4rem;
+  display: block;
+  letter-spacing: 1.5rem; }
+
+.header {
+  height: 95vh;
+  background-color: #32619f;
+  margin: 0 auto; }
+  .header__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }

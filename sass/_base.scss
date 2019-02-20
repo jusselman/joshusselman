@@ -1,0 +1,23 @@
+$color-primary: #fff;
+$color-primary-light: rgb(134, 179, 255);
+$color-primary-dark: rgb(50, 97, 159);
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  line-height: 1.7;
+  color: #fff;
+  padding: 2rem;
+  box-sizing: border-box;
+}
