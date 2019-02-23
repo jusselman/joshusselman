@@ -1,3 +1,71 @@
 @import 'base.scss';
 @import 'typography.scss';
 @import 'header.scss';
+
+.section-main {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-image: url('../img/fullscreen_image.JPG');
+  background-position: center;
+  background-attachment: fixed;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 'main main2';
+
+  .main-content {
+    grid-area: main;
+  }
+
+  h1.main-heading {
+    color: #fff;
+    font-size: 5rem;
+    text-align: center;
+    top: 40%;
+    transform: translateY(-50%);
+    position: relative;
+  }
+
+  .profession {
+    color: #fff;
+    top: 40%;
+    position: relative;
+    text-align: center;
+    transition: all 1s;
+  }
+
+  #faded::before,
+  #faded::after {
+    content: '';
+    display: inline-block;
+    width: 20%;
+    border-bottom: 1px solid #fff;
+    margin: 0 0.5em 0 -55%;
+    vertical-align: middle;
+    border-bottom: 1px solid;
+  }
+
+  #faded::after {
+    margin: 0 -55% 0 0.5em;
+  }
+
+  #faded {
+    transition: all 1s;
+  }
+
+  .social_icons {
+    grid-area: main;
+    top: 45%;
+    position: relative;
+    text-align: center;
+  }
+
+  .social_icons li {
+    display: inline;
+  }
+
+  .social_icons li .icon-outer {
+    height: 55px;
+    width: 55px;
+  }
+}
