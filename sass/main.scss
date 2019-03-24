@@ -1,9 +1,12 @@
+@import 'config';
+@import 'resume';
+@import 'contact';
+@import 'works';
 @import 'base.scss';
 @import 'typography.scss';
 @import 'header.scss';
 @import 'footer.scss';
 @import 'navigation.scss';
-@import 'contact';
 
 .section-main {
   height: 100vh;
