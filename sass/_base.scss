@@ -7,17 +7,23 @@ $color-primary-dark: rgb(50, 97, 159);
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
   font-size: 62.5%;
+  height: 100%;
 }
 
 body {
-  font-family: 'PT Sans', sans-serif;
-  line-height: 1.7;
-  color: #fff;
-  padding: 2rem;
-  box-sizing: border-box;
+  background-color: #f4f4f4;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  height: 100%;
 }

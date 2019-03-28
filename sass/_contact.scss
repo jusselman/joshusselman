@@ -12,12 +12,12 @@
   padding-bottom: 250px;
 
   .contact-heading {
-    // @include sectionHeader;
-    // color: #fff;
+    @include sectionHeader;
+    color: #fff;
   }
 
   .section-title::after {
-    // @include headerBar;
+    @include headerBar;
     background: #fff;
   }
 
