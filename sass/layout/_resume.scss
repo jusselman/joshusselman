@@ -1,21 +1,21 @@
 // RESUME SECTION //
 
-  .section-resume {
-    height: auto;
-    width: 100%;
-    overflow: hidden;
-    background: #fff;
-    color: rgb(119, 119, 119);
-    padding-bottom: 100px;
+.section-resume {
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  color: rgb(119, 119, 119);
+  padding-bottom: 100px;
 
-    h1, h2 {
-      color: #000;
-    }
+  h1,
+  h2 {
+    color: #000;
+  }
 
-    h2 {
-      font-size: 1rem;
-    }
-
+  h2 {
+    font-size: 1rem;
+  }
 
   .resume-container {
     width: 100%;
@@ -23,10 +23,9 @@
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-        "education professional";
+    grid-template-areas: 'education professional';
 
-    .resume-education{
+    .resume-education {
       grid-area: education;
       // margin-left: 2rem;
     }
@@ -53,7 +52,7 @@
       margin-top: 40px;
     }
 
-    .resume-professional{
+    .resume-professional {
       grid-area: professional;
     }
 
@@ -62,7 +61,6 @@
     }
 
     .education-header::before {
-
     }
 
     .wrapper {
@@ -73,9 +71,9 @@
       grid-row-gap: 15px;
       grid-template-columns: repeat(4, 1fr);
       grid-template-areas:
-        "date prog prog prog"
-        ".  place place place"
-        ".  desc desc desc";
+        'date prog prog prog'
+        '.  place place place'
+        '.  desc desc desc';
     }
 
     .res-date {
@@ -116,28 +114,26 @@
     .res-place {
       grid-area: place;
       text-align: left;
-
-      }
+    }
 
     .res-desc {
       grid-area: desc;
       text-align: left;
     }
- }
-
-    .resume-heading {
-      @include sectionHeader;
-      color: #000;
-    }
-
-    .section-title::after {
-      @include headerBar;
-      background: #000;
   }
 
+  .resume-heading {
+    @include sectionHeader;
+    color: #000;
+  }
+
+  .section-title::after {
+    @include headerBar;
+    background: #000;
+  }
 }
 
-@media (max-width:999px) {
+@media (max-width: 999px) {
   .resume-container {
     display: block !important;
     text-align: center;
@@ -159,7 +155,10 @@
     //   "desc" !important;
   }
 
-  .res-date, .res-prog, .res-place, .res-desc {
+  .res-date,
+  .res-prog,
+  .res-place,
+  .res-desc {
     text-align: center !important;
     padding-top: 25px;
   }
